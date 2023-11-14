@@ -24,9 +24,9 @@ function displayCities(city) {
 
 function getUrl(city, type = "weather") {
   if (type == "forecast") {
-    return `http://api.openweathermap.org/data/2.5/forecast?q=${city},us&units=imperial&APPID=613e1963a5754fdc86d6c3e6401bd7a5`;
+    return `https://api.openweathermap.org/data/2.5/forecast?q=${city},us&units=imperial&APPID=613e1963a5754fdc86d6c3e6401bd7a5`;
   }
-  return `http://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&APPID=613e1963a5754fdc86d6c3e6401bd7a5`;
+  return `https://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&APPID=613e1963a5754fdc86d6c3e6401bd7a5`;
 }
 
 // Defining function to handle the display of weather information.
