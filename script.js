@@ -131,7 +131,7 @@ function processForecastData(response) {
     var weatherIcon = document.createElement("img");
     weatherIcon.setAttribute(
       "src",
-      `http://openweathermap.org/img/w/${element.icon[0]}.png`
+      `https://openweathermap.org/img/w/${element.icon[0]}.png`
     );
     dateDiv.textContent = element.date;
     dateDiv.append(weatherIcon);
@@ -158,7 +158,7 @@ function processWeatherData(response, city) {
   var weatherIcon = document.createElement("img");
   weatherIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`
+    `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`
   );
   var date = new Date(weatherData.dt * 1000);
   var normalDate = date.toLocaleDateString("en-US");
