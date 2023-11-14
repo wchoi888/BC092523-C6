@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Calling the displayWeather function when the page has finished loading. -->
+
+  <body onload="displayWeather()">
+    <header><h1>Weather Dashboard</h1></header>
+    <main>
+      <div id="search">
+        <h2>search for a city</h2>
+        <input type="text" id="city" /><button id="search-btn">search</button>
+
+        <!-- Defining container for displaying previously searched cities.-->
+
+        <div id="city-container"></div>
+      </div>
+
+      <!-- Defining container for the main content of the application.-->
+
+      <div id="container">
+        <!-- Defining container to display the current weather information.-->
+
+        <div id="current-weather"></div>
+        <div><h2>5 days forecast</h2></div>
+
+        <!-- Defining container to display the forecast information.-->
+
+        <div id="forecast-text"></div>
+      </div>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
